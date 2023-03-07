@@ -35,6 +35,6 @@ int main()
     nhap(&hs);
     xuat(hs);
     getch();
-    return 0
+    return 0;
 }
 
