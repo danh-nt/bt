@@ -23,6 +23,6 @@ int main()
     struct diem3 a;
     nhap(&a);
     xuat(a);
-    return 0
+    return 0;
 
 }
