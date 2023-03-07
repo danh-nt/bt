@@ -6,12 +6,7 @@ struct honso
     int tu,mau,nguyen;
 };
 
-typedef struct honso HonSo;
-
-void nhap(HonSo);
-void xuat(HonSo);
-
-void nhap(HonSo hs)
+void nhap(struct honso &hs)
 {
     printf("nhap phan nguyen: ");
     scanf("%d", &hs.nguyen);
@@ -30,7 +25,7 @@ void nhap(HonSo hs)
     }while(hs.mau == 0);
 }
 
-void xuat(HonSo hs)
+void xuat(struct honso hs)
 {
     printf("%d\t%d/%d", hs.nguyen, hs.tu, hs.mau);
 }
