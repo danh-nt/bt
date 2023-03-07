@@ -1,5 +1,3 @@
-
-
 #include<stdio.h>
 #include<conio.h>
 
@@ -36,9 +34,6 @@ int main()
     struct Honso hs;
     nhap(&hs);
     xuat(hs);
-
-    
-
     getch();
     return 0;
 }
