@@ -1,38 +1,40 @@
+
+
 #include<stdio.h>
 #include<conio.h>
 
-struct honso
+struct Honso
 {
     int tu,mau,nguyen;
 };
 
-void nhap(struct honso &hs)
+void nhap(struct Honso *hs)
 {
     printf("nhap phan nguyen: ");
-    scanf("%d", &hs.nguyen);
+    scanf("%d", &hs->nguyen);
     printf("nhap tu so: ");
-    scanf("%d", &hs.tu);
+    scanf("%d", &hs->tu);
 
     do
     {
         printf("nhap mau so: ");
-        scanf("%d", &hs.mau);
+        scanf("%d", &hs->mau);
 
-        if(hs.mau == 0)
+        if(hs->mau == 0)
         {
             printf("\nMau so phai khac 0. Xin kiem tra lai !");
         }
-    }while(hs.mau == 0);
+    }while(hs->mau == 0);
 }
 
-void xuat(struct honso hs)
+void xuat(struct Honso hs)
 {
     printf("%d\t%d/%d", hs.nguyen, hs.tu, hs.mau);
 }
 int main()
 {
-    struct honso hs;
-    nhap(hs);
+    struct Honso hs;
+    nhap(&hs);
     xuat(hs);
 
     
@@ -40,3 +42,4 @@ int main()
     getch();
     return 0;
 }
+
