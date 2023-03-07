@@ -25,5 +25,5 @@ int main()
     struct HOPSUA a;
     nhap(&a);
     xuat(a);
-    return 0;
+    return 0
 }
