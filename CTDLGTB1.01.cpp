@@ -21,14 +21,16 @@ void Nhapmang(int a[], int &n)
     }
 }
 
-int Tong(int a[], int n)
+int tongChan(int a[], int n)
 {
-	
-	if(a[n-1]%2==0)
-	
-	return Tong(a,n-1)+a[n-1];
-	
-}
+    
+    if(n == 0)
+        return 0;
+    float s = tongChan(a, n - 1);
+    if(a[n - 1] % 2 == 0)
+        s = s + a[n - 1];
+    return s;
+
 
 void Xuatmang(int a[], int n)
 {
@@ -43,7 +45,6 @@ int main()
     int n, a[MAX];
     Nhapmang(a,n);
     Xuatmang(a,n);
-	int b = Tong(a,n);
-    printf("\nTong cac phan tu chan trong mang la:%d", b);
+    printf("\nTong cac phan tu chan trong mang la:%d", tongChan(a,n));
     return 0;
 }
