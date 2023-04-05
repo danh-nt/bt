@@ -1,3 +1,4 @@
+//https://www.geeksforgeeks.org/linear-search/
 // C code to linearly search x in arr[]. If x
 // is present then return its location, otherwise
 // return -1
