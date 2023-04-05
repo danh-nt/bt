@@ -22,7 +22,7 @@ void Nhapmang(int arr[], int &n)
 }
 void Xuatmang(int arr[], int n)
 {
-	printf("\nMang vua nhap la:");
+	printf("\nMang sau khi xep la:");
     for(int i=0; i<n; i++)
     {
         printf("\t%d", arr[i]);
