@@ -1,3 +1,4 @@
+//https://www.geeksforgeeks.org/linear-search/
 int search(int arr[], int n, int x)
 {
 	int i;
